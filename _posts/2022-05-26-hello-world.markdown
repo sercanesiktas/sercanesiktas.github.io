@@ -2,7 +2,7 @@
 title:  "Merhaba Github Pages!"
 date:   2022-05-26 18:50:20
 categories: [github]
-tags: [sercanesiktas]
+tags: [jekyll]
 ---
 
 ###Merhaba Dünya!
