@@ -3,17 +3,17 @@ title: Sercan EŞİKTAŞ
 description: 'Sercan EŞİKTAŞ - Kişisel Bloğu'
 url: 'http://sercanesiktas.github.io'
 baseurl: '/'
-# google_analytics: 'UA-XXXXXX-X'
-# disqus_shortname: 'your-disqus-name'
+google_analytics: 'G-VZV3ZZ9JYP'
+disqus_shortname: 'sercanesiktasgithubio'
 # disable_landing_page: true
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  name: 'Sercan EŞİKTAŞ'
+  email: sercanesiktas@gmail.com
+  twitter_username: sercanesiktas
+  facebook_username: sercanesiktas
+  github_username:  sercanesiktas
+  linkedin_username:  sercanesiktas
 
 defaults:
   -
