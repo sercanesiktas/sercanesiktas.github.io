@@ -1,1 +1,39 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: Evren DOĞAN
+description: 'Evren DOĞAN - Kişisel Bloğu'
+url: 'https://evrend.github.io/'
+baseurl: '/'
+google_analytics: 'UA-63648079-2'
+disqus_shortname: 'evrendgithubio'
+
+author:
+  name: 'Evren Doğan'
+  email: evrend@outlook.com
+#  twitter_username: joshgerdes
+  facebook_username: evrenndogan
+  github_username:  evrend
+  linkedin_username:  evrendogan
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
