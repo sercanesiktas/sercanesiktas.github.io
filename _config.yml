@@ -1,0 +1,39 @@
+# Site settings
+title: Sercan EŞİKTAŞ
+description: 'Sercan EŞİKTAŞ - Kişisel Bloğu'
+url: 'http://sercanesiktas.github.io/'
+baseurl: '/'
+google_analytics: 'UA-63648079-2'
+disqus_shortname: 'sercanesiktasgithubio'
+
+author:
+  name: 'Sercan EŞİKTAŞ'
+  email: sercanesiktas@gmail.com
+  twitter_username: sercanesiktas
+  facebook_username: sercanesiktas
+  github_username:  sercanesiktas
+  linkedin_username:  sercanesiktas
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
