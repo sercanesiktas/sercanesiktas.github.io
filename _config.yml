@@ -1,7 +1,7 @@
 # Site settings
 title: Sercan EŞİKTAŞ
 description: 'Sercan EŞİKTAŞ - Kişisel Bloğu'
-url: 'https://sercanesiktas.github.io/'
+url: 'http://sercanesiktas.github.io/'
 baseurl: '/'
 google_analytics: 'UA-63648079-2'
 disqus_shortname: 'sercanesiktasgithubio'
