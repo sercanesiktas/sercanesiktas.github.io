@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Categories
-permalink: /categories/
+title: Kategoriler
+permalink: /kategoriler/
 robots: noindex
 ---
