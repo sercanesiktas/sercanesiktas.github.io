@@ -1,18 +1,18 @@
 # Site settings
-title: Evren DOĞAN
-description: 'Evren DOĞAN - Kişisel Bloğu'
-url: 'https://evrend.github.io/'
+title: Sercan EŞİKTAŞ
+description: 'Sercan EŞİKTAŞ - Kişisel Bloğu'
+url: 'https://sercanesiktas.github.io/'
 baseurl: '/'
 google_analytics: 'UA-63648079-2'
-disqus_shortname: 'evrendgithubio'
+disqus_shortname: 'sercanesiktasgithubio'
 
 author:
-  name: 'Evren Doğan'
-  email: evrend@outlook.com
-#  twitter_username: joshgerdes
-  facebook_username: evrenndogan
-  github_username:  evrend
-  linkedin_username:  evrendogan
+  name: 'Sercan EŞİKTAŞ'
+  email: sercanesiktas@gmail.com
+  twitter_username: sercanesiktas
+  facebook_username: sercanesiktas
+  github_username:  sercanesiktas
+  linkedin_username:  sercanesiktas
 
 defaults:
   -
