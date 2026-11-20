@@ -1,166 +1,589 @@
-<!doctype html>
-<html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sercan Eşiktaş · Yazılım geliştirici</title>
-<meta name="description" content="Sercan Eşiktaş: web uygulamaları geliştiren, güvenliği de düşünen yazılım geliştirici. Açık kaynak projeler, deneyim ve iletişim.">
-<meta name="color-scheme" content="light dark">
-<link rel="canonical" href="https://sercanesiktas.github.io/">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sercan Eşiktaş · Yazılım geliştirici">
-<meta property="og:description" content="Web uygulamaları geliştiriyorum, güvenliğini de düşünerek. Açık kaynak projeler ve iletişim.">
-<meta property="og:url" content="https://sercanesiktas.github.io/">
-<meta property="og:locale" content="tr_TR">
+  <title>Sercan EŞİKTAŞ Personal Web Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Sercan Eşiktaş",
-  "url": "https://sercanesiktas.github.io/",
-  "jobTitle": "Yazılım geliştirici",
-  "address": { "@type": "PostalAddress", "addressLocality": "İstanbul", "addressCountry": "TR" },
-  "sameAs": [
-    "https://github.com/sercanesiktas",
-    "https://www.linkedin.com/in/sercanesiktas",
-    "https://twitter.com/sercanesiktas",
-    "https://instagram.com/sercanesiktas"
-  ]
-}
-</script>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<link rel="stylesheet" href="css/stil.css">
-<script>
-  // Temayı sayfa çizilmeden uygula, açılışta renk titremesi olmasın
-  try {
-    var t = localStorage.getItem('tema');
-    if (t === 'acik' || t === 'koyu') document.documentElement.setAttribute('data-tema', t);
-  } catch (e) {}
-</script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+ 
 </head>
+
 <body>
-<a class="atla" href="#icerik" data-en="Skip to content">İçeriğe geç</a>
 
-<header class="ust">
-  <div class="kap ust-ic">
-    <a class="marka" href="#" aria-label="Sercan Eşiktaş, sayfanın başı">
-      <span class="monogram" aria-hidden="true">SE</span>
-      <span class="marka-ad">Sercan Eşiktaş</span>
-    </a>
-    <nav aria-label="Ana gezinme" class="gezinme">
-      <a href="#projeler" data-en="Projects">Projeler</a>
-      <a href="#hakkimda" data-en="About">Hakkımda</a>
-      <a href="#yol" data-en="Experience">Yol</a>
-      <a href="#hizmetler" data-en="Services">Hizmetler</a>
-      <a href="#iletisim" data-en="Contact">İletişim</a>
-    </nav>
-    <div class="araclar">
-      <button type="button" class="arac" id="dilDugmesi" aria-label="Dili değiştir: English">EN</button>
-      <button type="button" class="arac" id="temaDugmesi" aria-label="Temayı değiştir">
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M12 3a9 9 0 1 0 9 9c0-.5-.05-1-.14-1.47A6.5 6.5 0 0 1 12 3Z" fill="currentColor"/></svg>
-      </button>
-    </div>
-  </div>
-</header>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-<main id="icerik">
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-  <section class="kahraman kap" aria-labelledby="baslik">
-    <p class="etiket" data-en="Software developer · Istanbul">Yazılım geliştirici · İstanbul</p>
-    <h1 id="baslik" data-en="I build web applications, with security in mind.">Web uygulamaları geliştiriyorum, güvenliğini de düşünerek.</h1>
-    <p class="giris" data-en="I started with PHP and MySQL at 14. Today I work with Laravel, React, Angular, TypeScript and Node.js. I also publish small open source tools and datasets.">14 yaşımda PHP ve MySQL ile başladım. Bugün Laravel, React, Angular, TypeScript ve Node.js ile çalışıyorum. Bunun yanında küçük açık kaynak araçlar ve veri setleri yayınlıyorum.</p>
-    <p class="dugmeler">
-      <a class="dugme birincil" href="#projeler" data-en="See the projects">Projelere bak</a>
-      <a class="dugme" href="https://github.com/sercanesiktas" rel="noopener">GitHub</a>
-      <a class="dugme" href="#iletisim" data-en="Get in touch">İletişime geç</a>
-    </p>
-  </section>
-
-  <section id="projeler" class="bolum kap" aria-labelledby="projeler-baslik">
-    <header class="bolum-ust">
-      <h2 id="projeler-baslik" data-en="Open source projects">Açık kaynak projeler</h2>
-      <p class="not" id="projeSayisi" aria-live="polite"></p>
-    </header>
-    <p class="aciklama" data-en="Everything lives on GitHub, with tests and documentation. New projects show up in this list automatically as they are published.">Hepsi GitHub'da, testli ve belgeli. Yeni projeler yayınlandıkça bu listeye kendiliğinden eklenir.</p>
-    <ol class="projeler" id="projeListesi">
-      <li class="yukleniyor" data-en="Loading projects…">Projeler yükleniyor…</li>
-    </ol>
-    <noscript><p class="not">Proje listesi için JavaScript gerekir. Projelerin hepsi <a href="https://github.com/sercanesiktas?tab=repositories" rel="noopener">GitHub'da</a>.</p></noscript>
-  </section>
-
-  <section id="hakkimda" class="bolum kap iki-sutun" aria-labelledby="hakkimda-baslik">
-    <div>
-      <h2 id="hakkimda-baslik" data-en="About">Hakkımda</h2>
-      <p data-en="I am a software developer based in Istanbul. I have been building websites and applications since I was a teenager, and my background includes web security: finding vulnerabilities and closing them.">İstanbul'da yaşayan bir yazılım geliştiriciyim. Ergenlikten beri web siteleri ve uygulamalar geliştiriyorum. Geçmişimde web güvenliği de var: güvenlik açıklarını bulmak ve kapatmak.</p>
-      <p data-en="I like small, well-tested tools that solve one problem properly. Most of my open source work comes from problems I ran into while building real projects, such as Turkish text handling, differences between SQLite and MySQL, or API errors in batch jobs.">Tek bir sorunu düzgün çözen, küçük ve testli araçları severim. Açık kaynak işlerimin çoğu gerçek projeler yaparken karşılaştığım sorunlardan çıkıyor: Türkçe metin işleme, SQLite ile MySQL arasındaki farklar, toplu işlerdeki API hataları gibi.</p>
-    </div>
-    <dl class="teknoloji" aria-label="Teknolojiler">
-      <div><dt data-en="Back end">Arka uç</dt><dd>PHP · Laravel · Node.js · MySQL · MongoDB</dd></div>
-      <div><dt data-en="Front end">Ön uç</dt><dd>JavaScript · TypeScript · React · Angular · HTML · CSS</dd></div>
-      <div><dt data-en="Security">Güvenlik</dt><dd data-en="Vulnerability assessment · web application security">Güvenlik açığı tespiti · web uygulaması güvenliği</dd></div>
-      <div><dt data-en="Also">Ayrıca</dt><dd data-en="Test-driven tools · data collection · automation">Testli araçlar · veri toplama · otomasyon</dd></div>
-    </dl>
-  </section>
-
-  <section id="yol" class="bolum kap" aria-labelledby="yol-baslik">
-    <h2 id="yol-baslik" data-en="Experience and education">Deneyim ve eğitim</h2>
-    <div class="iki-sutun">
-      <div>
-        <h3 class="alt-baslik" data-en="Work">İş</h3>
-        <ul class="zaman">
-          <li><span class="tarih" data-en="Now">Şu an</span><span data-en="Software developer at a public institution">Bir kamu kurumunda yazılım geliştirici</span></li>
-          <li><span class="tarih">2013 – <span data-en="present">devam</span></span><span data-en="Web design, programming and security work, freelance and for companies, including security consulting">Web tasarım, programlama ve güvenlik işleri; serbest ve şirketler için, güvenlik danışmanlığı dahil</span></li>
-        </ul>
-        <h3 class="alt-baslik" data-en="Sites I designed, maintained and secured">Tasarladığım, bakımını yaptığım ve güvenliğini sağladığım siteler</h3>
-        <p class="siteler">Europe Seller · Şahan Butik · Yeşimce Moda · Ossi İç Giyim · AYK Collection</p>
+      <div class="profile">
+        <img src="assets/img/profil.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Sercan EŞİKTAŞ</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/sercanesiktas" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/SercanEsiktas" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/sercanesiktas/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sercanesiktas" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+			<a href="https://github.com/sercanesiktas/" class="github"><i class="bx bxl-github"></i></a>
+        </div>
       </div>
-      <div>
-        <h3 class="alt-baslik" data-en="Education">Eğitim</h3>
-        <ul class="zaman">
-          <li><span class="tarih">2023 – <span data-en="present">devam</span></span><span data-en="Hoca Ahmet Yesevi University, Computer Engineering">Hoca Ahmet Yesevi Üniversitesi, Bilgisayar Mühendisliği</span></li>
-          <li><span class="tarih">2021 – <span data-en="present">devam</span></span><span data-en="Atatürk University, Justice">Atatürk Üniversitesi, Adalet</span></li>
-          <li><span class="tarih">2019 – 2021</span><span data-en="Anadolu University, Computer Programming">Anadolu Üniversitesi, Bilgisayar Programcılığı</span></li>
-          <li><span class="tarih">2010 – 2014</span><span data-en="Yalova Vocational High School, Computer Programming">Yalova Endüstri Meslek Lisesi, Bilgisayar Programcılığı</span></li>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home Page</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About Me</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>My Works</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>My Projects</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>My Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
-      </div>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Sercan EŞİKTAŞ</h1>
+      <p>I'm <span class="typed" data-typed-items="Web Designer, Developer, Freelancer, Photographer"></span></p>
     </div>
   </section>
 
-  <section id="hizmetler" class="bolum kap" aria-labelledby="hizmetler-baslik">
-    <h2 id="hizmetler-baslik" data-en="Services">Hizmetler</h2>
-    <ul class="hizmetler">
-      <li><h3 data-en="Web design and development">Web tasarım ve geliştirme</h3><p data-en="Corporate, personal and e-commerce sites.">Kurumsal, kişisel ve e-ticaret siteleri.</p></li>
-      <li><h3>SEO</h3><p data-en="Better visibility for an existing site in search engines.">Mevcut sitenin arama motorlarındaki görünürlüğü.</p></li>
-      <li><h3 data-en="Security">Güvenlik</h3><p data-en="Finding vulnerabilities you did not know about, and closing them.">Bilmediğin güvenlik açıklarını bulmak ve kapatmak.</p></li>
-      <li><h3 data-en="Automation">Otomasyon</h3><p data-en="Programs that automate repetitive work on your computer.">Bilgisayarında tekrarlayan işleri otomatikleştiren programlar.</p></li>
-      <li><h3 data-en="Windows software">Windows yazılımı</h3><p data-en="Custom programs for Windows, written on request.">İstek üzerine Windows için özel programlar.</p></li>
-      <li><h3 data-en="Project support">Proje desteği</h3><p data-en="Help with projects you are already building.">Halihazırda geliştirdiğin projelerde destek.</p></li>
-    </ul>
-  </section>
+  <main id="main">
 
-  <section id="iletisim" class="bolum kap iletisim" aria-labelledby="iletisim-baslik">
-    <h2 id="iletisim-baslik" data-en="Have a project in mind?">Aklında bir proje mi var?</h2>
-    <p class="aciklama" data-en="The quickest way to reach me is email.">Bana ulaşmanın en hızlı yolu e-posta.</p>
-    <p class="eposta"><a id="epostaBaglantisi" href="#iletisim" data-en="Show email address">E-posta adresini göster</a></p>
-    <noscript><p class="not">E-posta adresi için JavaScript gerekir. Bunun yerine <a href="https://github.com/sercanesiktas" rel="noopener">GitHub</a> üzerinden yazabilirsin.</p></noscript>
-    <ul class="sosyal">
-      <li><a href="https://github.com/sercanesiktas" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/sercanesiktas" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://twitter.com/sercanesiktas" rel="noopener">X / Twitter</a></li>
-      <li><a href="https://instagram.com/sercanesiktas" rel="noopener">Instagram</a></li>
-    </ul>
-  </section>
+    <section id="about" class="about">
+      <div class="container">
 
-</main>
+        <div class="section-title">
+          <h2>About Me</h2>
+          
+        </div>
 
-<footer class="alt kap">
-  <p>© <span id="yil">2026</span> Sercan Eşiktaş</p>
-  <p class="not" data-en="Built without frameworks and hosted on GitHub Pages.">Çerçevesiz yazıldı, GitHub Pages'te yayınlanıyor.</p>
-</footer>
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+        
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Cyber Security Expert &amp; Web Developer.</h3>
+            <p class="fst-italic">
+              I was born in 1996 in Yalova. I have been continuing the adventure that I started with Php and Mysql at the age of 14 for 13 years. I am actively developing myself and doing various projects on HTML5, Php, MySql, MongoDB, Javascript.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  
+                    <li><i class="bi bi-chevron-right"></i> <strong>Linkedin :</strong><span><a href="https://tr.linkedin.com/in/sercanesiktas">Click Here</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Twitter :</strong> <span><a href="https://twitter.com/sercanesiktas">Click Here</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>GitHub :</strong> <span><a href="https://github.com/sercanesiktas">Click Here</a></span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Email :</strong> <span>sercanesiktas@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City :</strong> <span>Istanbul, TR</span></li>
+                </ul>
+              </div>
+              
+            </div>
+            <p>
+              
+            </p>
+          </div>
+        </div>
 
-<script src="js/site.js"></script>
+      </div>
+    </section>
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Right Now</h2>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Customers</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="52" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Developed Project</strong> 
+				  <br>Used or Ready To Use Projects.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="485" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects Available Online</strong>
+				  <br>Application and Software Development</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Software and Code Developer</strong> 
+				  <br>People I Work With</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Professional Qualifications</h2>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML5 <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">C++ <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">82%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">99%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="progress">
+              <span class="skill">C <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>My Works</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Sercan EŞİKTAŞ</h4>
+              <p><em>Advanced and end user focused Web designer and App developer with over 14 years of experience.
+              </em></p>
+              <ul>
+                <li>Besiktas, Istanbul, TR</li>
+               
+                <li>sercanesiktas@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Yalova Endüstri Meslek Lisesi &amp; COMPUTER PROGRAMMING</h4>
+              <h5>2010 - 2014</h5>
+            </div>
+            <div class="resume-item">
+              <h4>Anadolu University &amp; COMPUTER PROGRAMMING</h4>
+              <h5>2019 - 2021</h5>
+            </div>
+            <div class="resume-item">
+              <h4>Ataturk University &amp; department of justice</h4>
+              <h5>2021 - Continue </h5>
+            </div>
+            <div class="resume-item">
+              <h4>Hoca Ahmet Yesevi University &amp; Computer Engineering</h4>
+              <h5>2023 - Continue </h5>
+            </div>
+            <br>
+            <br>
+                     </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">My Experiences</h3>
+            <div class="resume-item">
+              <h4>Web Designing &amp; Programming &amp; Cyber Security </h4>
+              <h5>2013 - Continue</h5>
+          
+              <ul>
+                <li>I specialize in design, programming and cyber security..</li>
+                <li>I have been improving myself in the fields of "HTML, CSS, PHP, JAVA, C++, C" for more than 14 years. </li>
+                <li>I work as a cyber security consultant for many companies.</li>
+                <li>I am currently working as a software developer in a public institution.</li>
+                
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Websites Designed, Maintained and Secured By Me</h4>
+              
+              
+              <ul>
+                <li><a href="https://europe-seller.com/">Europe Seller</a></li>
+                <li><a href="http://www.butiksahan.com">Şahan Butik</a></li>
+                <li><a href="http://www.yesimcemoda.com">Yeşimce Moda</a></li>
+                <li><a href="http://www.ossiicgiyim.com">Ossi İç Giyim</a></li>
+                <li><a href="http://www.aykcollectionn.com">AYK Collection</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>My Project</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Web Page</li>
+              <li data-filter=".filter-card">Coding</li>
+              <li data-filter=".filter-web">Software</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can design and code a personal or corporate web page."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can design a logo specific to your pages or projects."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I Can Get It To The Top Ranks In Google Searches."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can set up an e-commerce site and ensure its security."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can ensure the high security of your servers or personal networks."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can write an algorithm for you."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can develop your mobile application for you."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can detect the security vulnerabilities of your website, phone or computer and close those vulnerabilities."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="I can code any design you want."><i class="bx bx-plus"></i></a>
+                <a href="https://twitter.com/sercanesiktas" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>My Services</h2>
+          
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Web design</a></h4>
+            <p class="description">I can create your corporate, personal or e-commerce pages.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Google SEO</a></h4>
+            <p class="description">I can move your existing website to the top of search engines..</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Programming</a></h4>
+            <p class="description">I can write automation programs that you can use on your computer.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Software</a></h4>
+            <p class="description">I can write a program upon your request for your computers with Windows operating system.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Security</a></h4>
+            <p class="description">I can find security vulnerabilities on your website or computer that you don't know about and close those vulnerabilities.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Project Support</a></h4>
+            <p class="description">I can support you in the projects you are developing.</p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Adres:</h4>
+                <p>Yalova - İstanbul - Sakarya</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>sercanesiktas@gmail.com</p>
+              </div>
+
+              <div class="twitter">
+                <i class="bi bi-twitter"></i>
+                <h4>Twitter :</h4>
+                <p>sercanesiktas</p>
+              </div>
+
+              <div class="linkedin">
+                <i class="bi bi-linkedin"></i>
+                <h4>Linkedin :</h4>
+                <p>sercanesiktas</p>
+              </div>
+
+              <div class="github">
+                <i class="bi bi-github"></i>
+                <h4>Github :</h4>
+                <p>sercanesiktas</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Adınız</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Email Adresiniz</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Konu</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Mesajınız</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Bekleyiniz</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Mesajınız İletildi. Teşekkürler</div>
+              </div>
+              <div class="text-center"><button type="submit">Gönder</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        2010 - ∞ &copy; Copyright <strong><span></span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://www.instagram.com/sercanesiktas/">Sercan EŞİKTAŞ</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

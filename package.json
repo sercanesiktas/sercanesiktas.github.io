@@ -1,6 +1,0 @@
-{
-  "name": "sercanesiktas.github.io",
-  "private": true,
-  "description": "Kişisel site: çerçevesiz, tek sayfa",
-  "scripts": { "test": "node --test test/*.test.js", "sunucu": "python3 -m http.server 8000" }
-}
