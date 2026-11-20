@@ -94,7 +94,7 @@ a:hover { color: var(--vurgu); }
 .kahraman { padding-block: clamp(4rem, 12vw, 9rem) clamp(3rem, 8vw, 6rem); }
 .etiket { font: 0.8125rem/1.4 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--vurgu); margin: 0 0 1.5rem; }
 h1, h2, h3 { font-family: var(--serif); font-weight: 600; letter-spacing: -0.015em; margin: 0; }
-h1 { font-size: clamp(2.4rem, 5vw + 0.7rem, 4.5rem); line-height: 1.05; max-width: 20em; text-wrap: balance; }
+h1 { font-size: clamp(2.5rem, 6.4vw + 0.6rem, 5.4rem); line-height: 1.03; max-width: 16ch; text-wrap: balance; }
 .giris { font-size: clamp(1.1rem, 1vw + 0.9rem, 1.35rem); line-height: 1.55; color: var(--soluk); max-width: 40rem; margin: 2rem 0 0; }
 .dugmeler { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 2.25rem 0 0; }
 .dugme {
